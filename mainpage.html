@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jersey+25+Charted&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>BS5 Forms</title>
+    <style>
+        .container {
+    background-color:#E8D7FF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: darkorange;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #DFFFD6;
+    font-family: 'DM Serif Text', serif; 
+}
+
+.navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    width: 90px;
+}
+
+body {
+    background-color: #FFD3E8;
+}
+
+.highlight {
+    background-color: greenyellow;
+    padding: 2px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.highlight span {
+    font-size: 24px; 
+}
+.jersey-25-charted-regular {
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    </nav>
+     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" class="rounded-circle">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="">First Quarter</a>
+                </li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="second.html">Second Quarter</a>
+                </li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="fourth.html">Third Quarter</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="whatsnext.html">What's Next</a>
+                </li>
+              </ul>
+              <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-warning" type="button">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    <div class="alert alert-warning mb-3 mt-3">
+        <strong>Fill-up the form below</strong> 
+    </div>
+    
+ <div class="container mt-3 mb-3">
+    <form class="form">
+        <div class="form-group mb-3" role="group" aria-labelledby="contact-details-head">
+            <div class="highlight jersey-25-charted-regular"><span>MY ONLINE PORTFOLIO</span></div>
+            <center><div>
+            	This is my online portfolio which contains all my projects from the previous quarters.
+            </div></center>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

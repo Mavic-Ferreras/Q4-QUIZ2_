@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>BS5 Forms</title>
+    <style>
+        .container {
+            background-color:#8B575C;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #C98986;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            padding: 5px; 
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: #F6BDD1;
+        }
+
+        .navbar {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/f6/f0/82/f6f0827aa3be3dcf7cdd35b50699db9a.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            height: 100vh; 
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3 mb-3">
+        <form class="form">
+          <div class="form-group mb-3" role="group" aria-labelledby="contact-details-head">
+            <p id="contact-details-head">Welcome User</p>
+            <label>
+              Name <input type="text" class="form-control" name="username" id="username" />
+            </label>
+            <label>
+              Email <input type="email" class="form-control" name="email" id="email" />
+            </label>
+            <a href="mainpage.html" class="btn btn-warning mt-3">Log in</a>
+         
+            <button type="button" class="btn btn-danger mt-3 ms-2" onclick="clearFields()">Cancel</button>
+          </div>
+      </form>
+  </div>
+  
+  <script>
+    function clearFields() {
+      document.getElementById("username").value = "";
+      document.getElementById("email").value = "";
+    }
+  </script>
+</body>
+</html>
